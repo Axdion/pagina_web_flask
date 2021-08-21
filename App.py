@@ -6,7 +6,7 @@ from datetime import date
 from datetime import datetime
 import os
 app = Flask(__name__)
-app.secret_key = 'clavesecreta'
+app.secret_key = 'ingrese_un_valor_secreto_acá'
 app.config['UPLOAD_PATH'] = 'static/uploads/'
 
 @app.route('/')
