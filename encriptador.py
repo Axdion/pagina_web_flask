@@ -1,4 +1,6 @@
-from hashlib import md5
+#Por temas de seguridad el algoritmo de encriptación no se incluirá en este codigo
+#ingresado la variable valor, debe encriptarse para tener una base de datos segura
 
 def encriptar(valor:str):
-    return (md5(valor.encode('utf-8')).hexdigest())
+    #Debe encriptar "valor" acá
+    return (valor)
