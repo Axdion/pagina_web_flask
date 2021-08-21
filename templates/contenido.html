@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorriendo La Paz</title>
+    {% from 'macros.html' import generar_barra_navegacion %}
+    <!--FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--FONT OSWALD-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'styles/style.css')}}">
+
+
+
+    <style>
+        .showcase{
+            background-image: url("{{url_for('static', filename='images/bannerInicio.jpg')}}");
+        }
+
+        .cards-banner-one{
+            background-image: url("{{url_for('static', filename='images/aguayo.jpg')}}");
+        }
+
+        .cards-banner-two{
+            background-image: url("{{url_for('static', filename='images/banner2.jpg')}}");
+        }
+
+        .bannerAnimado{
+            background-image: url("{{url_for('static', filename='images/estrella.png')}}");
+
+            }
+
+        .bannerInti{
+            background-image: url("{{url_for('static', filename='images/bannerInti.png')}}");
+
+            }
+    </style>
+
+</head>
+<body>
+    <div class= "container">
+        {{ generar_barra_navegacion() }}
+        <hr>
+        <!-- SHOWCASE -->
+        <header class="showcase" >
+            <h2>CONTENIDO</h2>
+            <p>El videojuego ofrece la experiencia de visitar distintos lugares turisticos de la ciudad de La Paz, ademas de las multiples caracteristicas que se deteallan a continuación.</p>
+        </header>
+        <!-- CONTENIDO -->
+        <div class="contenido">
+            <div>
+                <img src="{{url_for('static', filename='images/objetos.jpg')}}" alt="">
+                <h3>OBJETOS</h3>
+                <p>Recolecta distintos objetos caracteristicos de la cultura paceña, con los cuales podras explorar nuevos escenarios.</p>
+
+            </div>
+
+            <div>
+                <img src="{{url_for('static', filename='images/supay.jpg')}}" alt="">
+                <h3>DERROTA AL MAL</h3>
+                <p>Recolecta todos los objetos, derrota a Supay y salva a la población de La Paz.</p>
+
+            </div>
+
+            <div>
+                <img src="{{url_for('static', filename='images/LaPaz.jpg')}}" alt="">
+                <h3>RECORRE LA PAZ</h3>
+                <p>Explora la ciudad de La Paz, a la par de conocer mas sobre su cultura, tradición e historia.</p>
+
+            </div>
+
+            <div>
+                <img src="{{url_for('static', filename='images/enemigo.jpg')}}" alt="">
+                <h3>DIVERSIDAD DE ENEMIGOS</h3>
+                <p>Diversidad de enemigos que intentarán dificultar tu aventura, vencelos y culmina la historia.</p>
+
+            </div>
+
+        </div>
+
+        <section class="bannerAnimado">
+
+        </section>
+
+        <div class="contenido">
+            <div>
+                <img src="{{url_for('static', filename='images/multimapa.jpg')}}" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, exercitationem! Eaque nulla officia maiores amet commodi beatae rerum, possimus dicta.</p>
+                <a href="#" class="btn">Ver mas <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+            <div>
+                <img src="{{url_for('static', filename='images/instrumento.jpg')}}" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, exercitationem! Eaque nulla officia maiores amet commodi beatae rerum, possimus dicta.</p>
+                <a href="#" class="btn">Ver mas <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+            <div>
+                <img src="{{url_for('static', filename='images/nino.jpg')}}" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, exercitationem! Eaque nulla officia maiores amet commodi beatae rerum, possimus dicta.</p>
+                <a href="#" class="btn">Ver mas <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+            <div>
+                <img src="{{url_for('static', filename='images/MapaTexturas.png')}}" alt="">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, exercitationem! Eaque nulla officia maiores amet commodi beatae rerum, possimus dicta.</p>
+                <a href="#" class="btn">Ver mas <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+        </div>
+        <section class="bannerInti">
+            <div class="content">
+
+            </div>
+        </section>
+        <section class="social">
+            <p> Siguenos para mas</p>
+            <div class="links">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="·#">
+                        <h3>CONTACTOS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">acorinia@fcpn.edu.bo</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="·#">
+                        <h3>CELULAR</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">+591 65183814</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>LUGAR DE DESARROLLO</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">La Paz-Bolivia</a>
+                </li>
+                <li>
+                    <a href="#">Departamento de La Paz</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>TECNOLOGIAS UTILIZADAS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://unity.com/es">Unity</a>
+                </li>
+                <li>
+                    <a href="http://www.gimp.org.es/">Gimp</a>
+                </li>
+                <li>
+                    <a href="https://meme.institute/gxscc/">GXSCC</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <h3>Protegido por Derechos de Autor</h3>
+    </footer>
+
+    <!--Archivo JS-->
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{{url_for('static', filename='scripts/main.js')}}"></script>
+
+
+</body>
+</html>

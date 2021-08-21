@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorriendo La Paz</title>
+    {% from 'macros.html' import generar_barra_navegacion %}
+    <!--FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--FONT OSWALD-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'styles/style.css')}}">
+
+
+
+    <style>
+        .showcase{
+            background-image: url("{{url_for('static', filename='images/bannerInicio.jpg')}}");
+        }
+
+        .cards-banner-one{
+            background-image: url("{{url_for('static', filename='images/aguayo.jpg')}}");
+        }
+
+        .cards-banner-two{
+            background-image: url("{{url_for('static', filename='images/banner2.jpg')}}");
+        }
+    </style>
+
+</head>
+<body>
+    <div class= "container">
+        {{ generar_barra_navegacion() }}
+        <hr>
+
+        {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert-warning">
+                            {{message}}
+                        </div>
+                    {% endfor%}
+                {% endif %}
+            {%endwith%}
+
+
+        <h2 STYLE="text-align:center">REGISTRO</h2>
+        <div class="encabezado">
+            <h2>Registrarse permite acceder a mas funcionalidades de la pagina, como:</h2>
+            <h3>-Acceso al foro de la comunidad del videojuego.</h3>
+            <h3>-Link de descarga del videojuego</h3>
+            <h3>-Poder publicar tu feedback, opinion y capturas de tu experiencia jugandolo. </h3>
+
+
+        </div>
+        <div class="formulario">
+        <h2>REGISTRO DE USUARIO</h2>
+        <p>Rellene los siguientes campos situados a continuación.</p>
+            <form method="POST">
+                <div>
+                    <label >Nombre de Usuario:</label>
+                    <input type="text" name="username">
+                </div>
+                <div>
+                    <label >Nombres:</label>
+                    <input type="text" name="nombres">
+                </div>
+                <div>
+                    <label >Apellidos:</label>
+                    <input type="text" name="apellidos">
+                </div>
+                <div>
+                    <label>Correo Electronico:</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label >Contraseña</label>
+                    <input type="password" name="contra">
+                </div>
+                <div>
+                    <input type="submit" value="Registrarse">
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="·#">
+                        <h3>CONTACTOS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">acorinia@fcpn.edu.bo</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="·#">
+                        <h3>CELULAR</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">+591 65183814</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>LUGAR DE DESARROLLO</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">La Paz-Bolivia</a>
+                </li>
+                <li>
+                    <a href="#">Departamento de La Paz</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>TECNOLOGIAS UTILIZADAS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://unity.com/es">Unity</a>
+                </li>
+                <li>
+                    <a href="http://www.gimp.org.es/">Gimp</a>
+                </li>
+                <li>
+                    <a href="https://meme.institute/gxscc/">GXSCC</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <h3>Protegido por Derechos de Autor</h3>
+    </footer>
+
+    <!--Archivo JS-->
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{{url_for('static', filename='scripts/main.js')}}"></script>
+
+
+</body>
+</html>

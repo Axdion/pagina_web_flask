@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorriendo La Paz</title>
+    {% from 'macros.html' import generar_barra_navegacion %}
+    <!--FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--FONT OSWALD-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'styles/style.css')}}">
+
+
+
+    <style>
+        .showcase{
+            background-image: url("{{url_for('static', filename='images/bannerInicio.jpg')}}");
+        }
+
+        .cards-banner-one{
+            background-image: url("{{url_for('static', filename='images/aguayo.jpg')}}");
+        }
+
+        .cards-banner-two{
+            background-image: url("{{url_for('static', filename='images/banner2.jpg')}}");
+        }
+        .banner_sesion{
+            background-image: url("{{url_for('static', filename = 'images/banner_sesion.png')}}")
+        }
+    </style>
+
+</head>
+<body>
+    <div class= "container">
+        {{ generar_barra_navegacion() }}
+        <hr>
+        <div class="banner_sesion">
+            <div class="formulario">
+            <h1> <a href="https://doc-0s-3k-docs.googleusercontent.com/docs/securesc/8gvbtafl1bq58sil47s1nhses1m8dll2/j1hvhst3phq6pcjb9cntv80uh8v93fg3/1620132150000/14136070919670711161/14136070919670711161/1Hq0ALoiQZy3Eyvr5o_7Q0y7VmHGnYeM4?e=download&authuser=1">Presione aquí para iniciar la descarga del archivo.</a> </h1>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="·#">
+                        <h3>CONTACTOS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">acorinia@fcpn.edu.bo</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="·#">
+                        <h3>CELULAR</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">+591 65183814</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>LUGAR DE DESARROLLO</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">La Paz-Bolivia</a>
+                </li>
+                <li>
+                    <a href="#">Departamento de La Paz</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>TECNOLOGIAS UTILIZADAS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://unity.com/es">Unity</a>
+                </li>
+                <li>
+                    <a href="http://www.gimp.org.es/">Gimp</a>
+                </li>
+                <li>
+                    <a href="https://meme.institute/gxscc/">GXSCC</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <h3>Protegido por Derechos de Autor</h3>
+    </footer>
+
+    <!--Archivo JS-->
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{{url_for('static', filename='scripts/main.js')}}"></script>
+
+
+</body>
+</html>

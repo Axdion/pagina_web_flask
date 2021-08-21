@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorriendo La Paz</title>
+    {% from 'macros.html' import generar_barra_navegacion %}
+    <!--FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--FONT OSWALD-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'styles/style.css')}}">
+
+
+
+    <style>
+        .showcase{
+            background-image: url("{{url_for('static', filename='images/bannerInicio.jpg')}}");
+        }
+
+        .cards-banner-one{
+            background-image: url("{{url_for('static', filename='images/aguayo.jpg')}}");
+        }
+
+        .cards-banner-two{
+            background-image: url("{{url_for('static', filename='images/banner2.jpg')}}");
+        }
+
+        .bannerAnimado{
+            background-image: url("{{url_for('static', filename='images/estrella.png')}}")
+            }
+
+        .banner_sesion{
+            background-image: url("{{url_for('static', filename = 'images/banner_sesion.png')}}")
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <img src="{{url_for('static', filename='images/error_404.png')}}" width="100%" height="100%">
+
+
+
+
+    <!--Archivo JS-->
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{{url_for('static', filename='scripts/main.js')}}"></script>
+
+
+</body>
+</html>

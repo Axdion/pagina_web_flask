@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% from 'macros.html' import generar_barra_navegacion %}
+    <title>Prueba</title>
+</head>
+<body>
+{% if session|length !=0 %}
+  <h2>Confirmado</h2>
+{% endif%}
+
+
+<h2>si</h2>
+{{ generar_barra_navegacion() }}
+</body>
+</html>

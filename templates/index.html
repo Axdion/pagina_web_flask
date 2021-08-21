@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorriendo La Paz</title>
+    {% from 'macros.html' import generar_barra_navegacion %}
+    <!--FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--FONT OSWALD-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'styles/style.css')}}">
+
+    <link rel="shortcut icon" href="#">
+
+    <style>
+        .showcase{
+            background-image: url("{{url_for('static', filename='images/bannerInicio.jpg')}}");
+        }
+
+        .cards-banner-one{
+            background-image: url("{{url_for('static', filename='images/aguayo.jpg')}}");
+        }
+
+        .cards-banner-two{
+            background-image: url("{{url_for('static', filename='images/banner2.jpg')}}");
+        }
+
+        .bannerAnimado{
+            background-image: url("{{url_for('static', filename='images/estrella.png')}}");
+
+            }
+
+        .bannerInti{
+            background-image: url("{{url_for('static', filename='images/bannerInti.png')}}");
+
+            }
+    </style>
+
+</head>
+<body>
+    <div class= "container">
+        {{ generar_barra_navegacion() }}
+        <hr>
+        <!-- SHOWCASE -->
+        <header class="showcase" >
+            <h2>Hawka: Recorriendo La Paz</h2>
+            <p>Hawka es un videojuego enfocado en recorrer distintos escenarios turisticos de La Paz; de la mano de Hawka un alegre quirquincho recorreremos la misteriosa tiwanaku, el imponente Illimani,  entre otros de los distintos escenarios que formaran parte de nuestra aventura.</p>
+
+        </header>
+        <!-- CONTENIDO -->
+        <section class="texto_index">
+            <h2>Visión</h2>
+            <p>Ser una de las paginas mas atractivas e interactivas en la exposición de un videojuego desarrollado en Bolivia, ofreciendo la mejor experiencia para acceder a su contenido multimedia y una comoda forma de descarga.  </p>
+            <h2>Misión</h2>
+            <p>Ofrecer contenido de utilidad para usuarios interesados en conocer mas sobre la creación de videojuegos en Bolivia. A su vez, atraer con este contenido a usuarios que buscan jugar un videojuego basado en la historia y cultura del departamento de La Paz.</p>
+            <h2>Objetivos</h2>
+                <ul>
+                    <li>-Obtener visibilidad a nivel local e internacional, para la exposición de nuestro videojuego desarrollado.</li>
+                    <li>-Detallar información interesante, atractiva de nuestro producto.</li>
+                    <li>-Permitir la descarga de nuestro videojuego, previo un sencillo registro.</li>
+                </ul>
+        </section>
+
+        <section class="bannerAnimado">
+
+        </section>
+
+        <section class="social">
+            <p> Siguenos para mas</p>
+            <div class="links">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="·#">
+                        <h3>CONTACTOS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">acorinia@fcpn.edu.bo</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="·#">
+                        <h3>CELULAR</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">+591 65183814</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>LUGAR DE DESARROLLO</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">La Paz-Bolivia</a>
+                </li>
+                <li>
+                    <a href="#">Departamento de La Paz</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>TECNOLOGIAS UTILIZADAS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://unity.com/es">Unity</a>
+                </li>
+                <li>
+                    <a href="http://www.gimp.org.es/">Gimp</a>
+                </li>
+                <li>
+                    <a href="https://meme.institute/gxscc/">GXSCC</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <h3>Protegido por Derechos de Autor</h3>
+    </footer>
+
+    <!--Archivo JS-->
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{{url_for('static', filename='scripts/main.js')}}"></script>
+
+
+</body>
+</html>

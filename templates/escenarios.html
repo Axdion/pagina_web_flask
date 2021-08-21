@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorriendo La Paz</title>
+    {% from 'macros.html' import generar_barra_navegacion %}
+    <!--FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--FONT OSWALD-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'styles/style.css')}}">
+
+
+
+    <style>
+        .showcase{
+            background-image: url("{{url_for('static', filename='images/bannerInicio.jpg')}}");
+        }
+
+        .cards-banner-one{
+            background-image: url("{{url_for('static', filename='images/aguayo.jpg')}}");
+        }
+
+        .cards-banner-two{
+            background-image: url("{{url_for('static', filename='images/banner2.jpg')}}");
+        }
+
+        .bannerAnimado{
+            background-image: url("{{url_for('static', filename='images/estrella.png')}}")
+            }
+
+
+    </style>
+
+</head>
+<body>
+    <div class= "container">
+        {{ generar_barra_navegacion() }}
+        <hr>
+
+       <div class="clase_mapa">
+           <h2>MULTIMEDIA</h2>
+           <img src="{{url_for('static', filename='images/mapa1.png')}}" alt="">
+           <h3>Tiwanaku</h3>
+            <p>Es una antigua ciudad arqueológica ubicada al oeste de La Paz, se caracteriza por su arquitectura decorada con relieves y planos incisos colocados sobre estelas; está compuesta por siete construcciones arquitectónicas importantes: Kalasasaya, templete semisubterráneo, pirámide de Akapana, Puerta del Sol , Puma Punku y templete , también grandes pirámides y esculturas.</p>
+
+       </div>
+
+        <div class="clase_mapa">
+           <img src="{{url_for('static', filename='images/mapa2.png')}}" alt="">
+            <h3>Iglesia de San Francisco</h3>
+            <p>La Basílica de San Francisco de la ciudad de La Paz, Bolivia, es un templo católico bajo la advocación de San Francisco de Asís. Está situado en el centro de la ciudad. Forma parte del conjunto conventual que da el nombre a la plaza adyacente Plaza Mayor de San Francisco.</p>
+       </div>
+
+        <div class="clase_mapa">
+           <img src="{{url_for('static', filename='images/mapa3.png')}}" alt="">
+            <h3>Lago Titicaca</h3>
+            <p>Con una antigüedad de 3 millones de años, el lago navegable a mayor altura del mundo es la frontera natural entre Perú y Bolivia y contiene una riqueza cultural, animal y vegetal inigualables.</p>
+       </div>
+
+        <div class="clase_mapa">
+           <img src="{{url_for('static', filename='images/mapa4.png')}}" alt="">
+            <h3>Illimani</h3>
+            <p>El nevado Illimani, con sus tres mil kilómetros cuadrados, es de una blancura impresionante. Sus aristas finas, delgadas y verticales le dan una mística indiscutible.</p>
+       </div>
+
+
+
+        <section class="social">
+            <p> Siguenos para mas</p>
+            <div class="links">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="·#">
+                        <h3>CONTACTOS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">acorinia@fcpn.edu.bo</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="·#">
+                        <h3>CELULAR</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">+591 65183814</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>LUGAR DE DESARROLLO</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">La Paz-Bolivia</a>
+                </li>
+                <li>
+                    <a href="#">Departamento de La Paz</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>TECNOLOGIAS UTILIZADAS</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://unity.com/es">Unity</a>
+                </li>
+                <li>
+                    <a href="http://www.gimp.org.es/">Gimp</a>
+                </li>
+                <li>
+                    <a href="https://meme.institute/gxscc/">GXSCC</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <h3>Protegido por Derechos de Autor</h3>
+    </footer>
+
+    <!--Archivo JS-->
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="{{url_for('static', filename='scripts/main.js')}}"></script>
+
+
+</body>
+</html>
